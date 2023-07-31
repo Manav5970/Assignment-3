@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket | Home</title>
+  <meta name="description" content="Welcome to our website. Learn about our services and contact us.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Name: Manavdeep Singh -->
+  <!-- Email: Msingh5970@conestogac.on.ca -->
+  <header>
+    <h1>Welcome to My Website</h1>
+    <img src="images/logo.jpg" alt="Logo">
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <aside>
+    <h2>Our Services</h2>
+    <ul>
+      <li>Improve Your Batting Basics</li>
+      <li>Tips and Drills</li>
+      <li>Batting to Spin</li>
+    </ul>
+  </aside>
+
+  <main>
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="employmentStatus">Employment Status:</label>
+        <select id="employmentStatus" name="employmentStatus" required>
+          <option value="">Select Option</option>
+          <option value="student">Student</option>
+          <option value="fullTime">Employed Full-time</option>
+          <option value="partTime">Employed Part-time</option>
+          <option value="retired">Retired</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>How did you hear about our site?</legend>
+        <input type="radio" id="socialMedia" name="hearAbout" value="socialMedia" required>
+        <label for="socialMedia">Social Media</label>
+        <input type="radio" id="friend" name="hearAbout" value="friend" required>
+        <label for="friend">Friend</label>
+        <input type="radio" id="searchEngine" name="hearAbout" value="searchEngine" required>
+        <label for="searchEngine">Search Engine</label>
+        <input type="radio" id="other" name="hearAbout" value="other" required>
+        <label for="other">Other</label>
+      </fieldset>
+      <fieldset>
+        <legend>Tell Us what you think!</legend>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here" required></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Submit</legend>
+        <label>
+          <input type="checkbox" name="robotCheck" required> I am not a robot.
+        </label>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </fieldset>
+    </form>
+
+    <script>
+      function validateForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var hearAbout = document.querySelector('input[name="hearAbout"]:checked');
+        var employmentStatus = document.getElementById('employmentStatus').value;
+        var comments = document.getElementById('comments').value;
+
+        if (!name || !email || !hearAbout || !employmentStatus || !comments) {
+          alert("Please fill out all required fields!");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Manavdeep Singh | Student Number: 8845970</p>
+  </footer>
+</body>
+</html>

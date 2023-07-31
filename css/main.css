@@ -1,0 +1,162 @@
+body {
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid #1c1b1b;
+    font: 16px/1.5 Arial, sans-serif;
+}
+
+header, nav, aside, main, footer {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+header {
+    background-color: #f0f0f0;
+}
+  
+header h1 {
+    font-size: 24px;
+}
+  
+header img {
+    width: 70px;
+    height: auto;
+    margin-right: 15px;
+}
+
+nav {
+    text-align: right;
+}
+  
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333;
+}
+  
+nav a:hover {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+aside {
+    height: 110vh;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid rgb(58, 0, 128);
+    width: 30%;
+    float: right;
+}
+  
+aside h2 {
+    margin: 5px;
+    padding: 5px;
+    width: 60%;
+    text-align: center;
+}
+
+aside ul {
+    list-style: none;
+    line-height: 20px;
+}
+
+main {
+    width: 66.67%;
+    float: right;
+}
+  
+main h2 {
+    font-size: 20px;
+}
+  
+main {
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid rgb(41, 0, 128);
+    width: 65%;
+    float: left;
+}
+
+figure {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+  
+figure img,
+figure video {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 14px;
+    clear: both;
+}
+  
+footer p {
+    font-size: 14px;
+}
+
+/* Add your CSS styles for the form here */
+form {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+  
+form fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+  
+form legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+  
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+  
+form input[type="submit"],
+form input[type="reset"] {
+    padding: 8px 20px;
+    background-color: #333;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
